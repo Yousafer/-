@@ -1,0 +1,37 @@
+#include <stdio.h>
+int main()
+{ 
+int score;
+
+char grade; 
+
+printf("请输入学生成绩：");
+
+scanf("%d",&score);
+
+
+switch(score/10){
+	case 6:	
+	grade='D';
+	break;
+	
+	case 7:
+	grade='C';
+	break;
+	
+	case 8:
+	grade='B';
+	break;
+	
+	case 9:
+	grade='A';
+	break;
+		
+	default:
+	grade='E';
+		
+	
+}
+	printf("\n 成绩等级是%c\n",grade);
+	
+	return 0;
