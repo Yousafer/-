@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(int argc, const char * argv[])
+{
+    char month[][100]= {
+        "Damn!What the fuck you doing ?",
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+    };
+    int i;
+    while (1) {
+        scanf("%d",&i);
+        printf("%s\n",month[i]);
+    }
+    
+}
+
