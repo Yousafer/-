@@ -1,0 +1,33 @@
+#include <stdio.h> 
+
+int main()
+
+{
+
+int a,b,c;
+
+for(a=1;a<10;a++){
+
+for(b=1;b<10;b++){
+
+for(c=1;c<10;c++){
+
+int d=a*100+b*10+c;
+
+if(d==a*a*a+b*b*b+c*c*c){
+
+printf("%d\n",d);
+
+}
+
+}
+
+}
+
+}
+
+return 0;
+
+}
+
+​
