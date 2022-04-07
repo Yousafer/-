@@ -1,0 +1,25 @@
+#include <stdio.h> 
+int main()
+{
+	int i,j,n;
+	
+	int sum=0;
+	int cnt=1;
+	
+	scanf("%d",&n);
+	
+	for(i=1;i<=n;i++){
+		
+		for(j=1;j<=i;j++){
+			cnt*=j;
+		}
+		
+		sum+=cnt;
+		cnt=1;
+	}
+	
+	printf("%d阶乘和的值为%d\n",n,sum);
+	
+	return 0;
+	 
+}
