@@ -1,0 +1,72 @@
+#include <stdio.h>
+void i(int a,int b){
+	
+	
+	
+	int c=0;
+	
+	if(a<b){
+	
+	c=a;
+	
+	a=b;
+	
+	b=c;
+	
+	}
+	
+
+	
+	c=a%b;
+	
+	while(c!=0){
+	
+	a=b;
+	
+	b=c;
+	
+	c=a%b;
+	
+	}
+	
+	printf("最大公约数为%d\n",b);
+}
+void j(int a,int b){
+	int m,n;
+	
+	int c=0;
+	
+	if(a<b){
+	
+	c=a;
+	
+	a=b;
+	
+	b=c;
+	
+	}
+	
+	m=a;
+	
+	n=b;
+	
+	c=a%b;
+	
+	while(c!=0){
+	
+	a=b;
+	
+	b=c;
+	
+	c=a%b;
+	
+	}
+	printf("最小公倍数为%d\n",m*n/b);
+}
+int main(){
+	int m,n;
+	scanf("%d%d",&m,&n);
+	i(m,n);
+	j(m,n);
+	return 0;
+}
